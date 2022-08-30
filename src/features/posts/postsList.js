@@ -6,8 +6,9 @@ const PostsList = () => {
   console.log(posts)
   return (
     <div>
-        <article>
+        <br/>
         <h2>Posts:</h2>
+        <br/>
         {posts.map(data => {
             return (
                 <article key = {data.id}>
@@ -16,7 +17,6 @@ const PostsList = () => {
                 </article>
             )
         })}
-        </article>
     </div>
   )
 }
